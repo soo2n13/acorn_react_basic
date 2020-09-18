@@ -47,6 +47,7 @@ class App extends React.Component {
           <MyComponent title="컴포넌트1"/>
           <MyComponent title="컴포넌트2"/>
         </div>
+        <NewComponent/>
         <NewComponent title="외부 컴포넌트" num={300}/>
       </div>
     );
