@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './css/bootstrap.min.css';
 import './App.css';
+import NewComponent from './NewComponent';
 
 class MyComponent extends Component{
   render() {
@@ -46,6 +47,7 @@ class App extends React.Component {
           <MyComponent title="컴포넌트1"/>
           <MyComponent title="컴포넌트2"/>
         </div>
+        <NewComponent title="외부 컴포넌트" num={300}/>
       </div>
     );
   }
