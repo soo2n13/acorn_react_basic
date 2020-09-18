@@ -8,6 +8,12 @@ class App extends React.Component {
   render() {
     const myName="lee";
     const isMan=true;
+    const boxStyle= {
+      width:"100px",
+      height:"100px",
+      border:"1px solid black",
+      backgroundColor:"blue" //background-color 지만, 특수문자 - 사용 불가 , 뒷문자를 대문자로 대체
+    }
     return (
       <div className="container">
         <h1>React</h1>
@@ -28,6 +34,9 @@ class App extends React.Component {
           alert("button click!");
         }}
         >click</button>
+        <br/>
+        <div style={boxStyle}>  
+        </div>
       </div>
     );
   }
