@@ -3,6 +3,13 @@ import logo from './logo.svg';
 import './css/bootstrap.min.css';
 import './App.css';
 
+class MyComponent extends Component{
+  render() {
+    return (
+      <p>MyComponent입니다.</p>
+    )
+  }
+}
 
 class App extends React.Component {
   render() {
@@ -36,6 +43,8 @@ class App extends React.Component {
         >click</button>
         <br/>
         <div style={boxStyle}>  
+          <MyComponent title="컴포넌트1"/>
+          <MyComponent title="컴포넌트2"/>
         </div>
       </div>
     );
